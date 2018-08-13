@@ -2,7 +2,6 @@ package com.tml.netty;
 
 import com.tml.netty.config.NettyConfig;
 import com.tml.netty.handler.ChannelHandler;
-import com.tml.netty.handler.ChannelOutHandler;
 import com.tml.netty.handler.MessageDecoder;
 import com.tml.netty.handler.MessageEncoder;
 import io.netty.bootstrap.ServerBootstrap;

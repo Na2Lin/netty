@@ -18,7 +18,6 @@ public class ChannelHandler extends SimpleChannelInboundHandler<Message> {
         if(o.getToId() > 0) {
             ChannelHandlerContext ctx1 = ConnectPool.get(o.getToId() + "");
             if(ctx1 == null || ctx1.isRemoved()) {
-                Message message = new Message();
                 o.setContent("对方不在线");
                 o.setToId(0);
                 channelHandlerContext.writeAndFlush(o);
